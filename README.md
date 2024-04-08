@@ -1,3 +1,3 @@
 # si_geren_restaurante
 
-Desenvolver um sistema em POO, para gerenciar restaurantes. Saber o lucro total do mês, salário dos funcionários e comida mais vendida. Em questão, esse restaurante trabalha com self service e delivery. Funcionários, Pedidos, Produto.
+Desenvolver um sistema em POO, para gerenciar a compra de comidas e bebidas de um restaurante. Onde o cliente faz a compra diretamente com o funcionário, tendo tambem variás formas de pagamentos. Assim o cliente terá acesso a sua nota fiscal.

@@ -33,10 +33,6 @@ class Funcionario extends Pessoa{
     public function EnviarPedido(){
         
     }
-
-
-
-
 }
 
 

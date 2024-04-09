@@ -1,5 +1,5 @@
 <?php
-
+//Pix herda de Pagamento
 class Pix extends Pagamento {
     protected $chave_pix;
 
@@ -9,6 +9,7 @@ class Pix extends Pagamento {
         $this->chave_pix = $chave_pix;
     }
 
+    //Metodo que recebe o valor por parametro para pagar a comida.
     public function realizarPagamento($valor_comida) {
         return $this->Pagar($valor_comida);
     }

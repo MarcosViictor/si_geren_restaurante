@@ -1,5 +1,6 @@
 
 <?php 
+    //Expotando as classes para a classe main.
     require_once 'Comida/Marmita.php';
     require_once 'Comida/Ladygaga.php';
     require_once 'Comida/Luansantana.php';

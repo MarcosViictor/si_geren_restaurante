@@ -10,6 +10,16 @@ class Cliente extends Pessoa{
         $this->endereco = $endereco;
         $this->contato = $contato;
     }
+
+    public function PedirDelivery(){
+       echo "Seu pedido será enviado para o " .$this->endereco;
+    }
+
+    public function CancelarPedido(){
+        echo "Pedido Cancelado! Que pena você não sabe o que está perdendo ;)";
+    }
+
+
 }
 
 

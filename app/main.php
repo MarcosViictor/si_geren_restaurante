@@ -45,8 +45,15 @@
 
      echo "<br>";
 
-     $sheldon = new Avista(14.00, "094-543-665-48");
-     $sheldon->realizarPagamento(13.00);
+     $joao = new Funcionario("Joao", "989-765-987-20", "caixa");
+
+     echo "<br>";
+     
+     $victor = new Cliente("Victor", "098-654-654-21", "epitacio pessoa 465", 8898876521);
+     $victor ->PedirDelivery();
+    echo "<br>";
+     $victor =new Avista(13.00, "098-654-654-21");
+     $victor-> realizarPagamento(13.00);
    
     
 

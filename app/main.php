@@ -14,7 +14,7 @@
     require_once 'Pessoa/Pessoa.php';
     require_once 'Pessoa/Funcionario.php';
     require_once 'Pessoa/Cliente.php';    
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +44,7 @@
      echo "<br>";
 
      $sheldon = new Avista(14.00, "094-543-665-48");
-    $sheldon->realizarPagamento(13.00);
+     $sheldon->realizarPagamento(13.00);
    
     
     

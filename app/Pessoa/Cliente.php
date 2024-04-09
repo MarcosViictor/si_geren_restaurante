@@ -10,20 +10,6 @@ class Cliente extends Pessoa{
         $this->endereco = $endereco;
         $this->contato = $contato;
     }
-
-    public function FazerPedido(){
-
-    }
-
-    public function CancelarPedido(){
-        
-    }
-
-
-    
-
-
-
 }
 
 

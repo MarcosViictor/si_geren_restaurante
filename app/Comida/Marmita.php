@@ -1,6 +1,6 @@
 <?php
 
-echo "Bem vindo ao Restaurante\n ";
+
 
     class Marmita {
       
@@ -15,7 +15,7 @@ echo "Bem vindo ao Restaurante\n ";
       }
 
       public function mostrarCardapio() {
-          echo "Marmita {$this->nome}: " . implode(", ", $this->itens) . ". R$ {$this->preco}\n";
+          echo "Marmita {$this->nome}: " . implode(", ", $this->itens) . ". R$ {$this->preco}<br>";
       }
   }
 

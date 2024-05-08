@@ -14,6 +14,42 @@ class Cliente extends Pessoa{
         $this->contato = $contato;
     }
 
+    //Getters
+    public function getId(){
+        return $this->id;
+    }
+    
+    public function getNome(){
+        return $this->nome;
+    }
+
+    public function getEndereco(){
+        return $this->getEndereco();
+    }
+
+    public function getContato(){
+        return $this->contato;
+    }
+
+    //Setters
+
+    
+    public function setId($id){
+         $this->id = $id;
+    }
+    
+    public function setNome($nome){
+         $this->nome = $nome;
+    }
+
+    public function setEndereco($endereco){
+        $this->getEndereco() = $endereco;
+    }
+
+    public function setContato($contato){
+        $this->contato = $contato;
+    }
+
     //Metódo para pedir o delivery, chamando o endereço do construtor.
     public function PedirDelivery(){
        echo "Seu pedido será enviado para o " .$this->endereco;

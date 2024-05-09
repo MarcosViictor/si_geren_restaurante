@@ -23,39 +23,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tde Backend</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
-    <h1>Seja Bem vindo ao nosso Restaurante</h1>
+    <h1>Seja Bem vindo ao nosso Restaurante, amantes da musica!</h1>
     <?php 
-     $marmitaManoelGomes = new MarmitaManoelGomes();
-     $marmitaManoelGomes->mostrarCardapio();
-   
-     $marmitaLadyGaga = new MarmitaLadyGaga();
-     $marmitaLadyGaga->mostrarCardapio();
-   
-     $marmitaTaylorSwift = new MarmitaTaylorSwift();
-     $marmitaTaylorSwift->mostrarCardapio();
-   
-     $marmitaLuanSantana = new MarmitaLuanSantana();
-     $marmitaLuanSantana->mostrarCardapio();
-   
-     $marmitaRobertoCarlos = new MarmitaRobertoCarlos();
-     $marmitaRobertoCarlos->mostrarCardapio();
 
-     echo "<br>";
+    $marmitaManoelGomes = new MarmitaManoelGomes();
+    $marmitaManoelGomes->mostrarCardapio();
 
-     $joao = new Funcionario("Joao", "989-765-987-20", "caixa");
+    $marmitaLadyGaga = new MarmitaLadyGaga();
+    $marmitaLadyGaga->mostrarCardapio();
 
-     echo "<br>";
-     
-     $victor = new Cliente("Victor", "098-654-654-21", "epitacio pessoa 465", 8898876521);
-     $victor ->PedirDelivery();
+    $marmitaTaylorSwift = new MarmitaTaylorSwift();
+    $marmitaTaylorSwift->mostrarCardapio();
+
+    $marmitaLuanSantana = new MarmitaLuanSantana();
+    $marmitaLuanSantana->mostrarCardapio();
+
+    $marmitaRobertoCarlos = new MarmitaRobertoCarlos();
+    $marmitaRobertoCarlos->mostrarCardapio();
+
+    
+    $taylor = new Funcionario("Taylor", "123.123.123-13", "Caixa");
+
     echo "<br>";
-     $victor =new Avista(13.00, "098-654-654-21");
-     $victor-> realizarPagamento(13.00);
-   
+
+    $harry = new Cliente("Harry", "321.321.321-31", "Rua Fineline", "8791232-1234");
+    $harry->PedirDelivery();
+
+    echo "<br>";
+
+    $harry = new Avista(12.00, "321.321.321-31");
+    $harry->realizarPagamento(13.00);
+
+
     
 
     ?>

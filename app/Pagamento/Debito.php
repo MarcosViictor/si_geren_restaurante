@@ -20,7 +20,7 @@ class Debito extends Pagamento {
     }
 
     public function getVrdebito(){
-        return $this->getVrdebito;
+        return $this->vr_debito;
     }
 
     //Setters
@@ -34,7 +34,7 @@ class Debito extends Pagamento {
     }
 
     public function setVrdebito($vr_debito){
-        $this->getVrdebito = $vr_debito;
+        $this->vr_debito = $vr_debito;
     }
 
 

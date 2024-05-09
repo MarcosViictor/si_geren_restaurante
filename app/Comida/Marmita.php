@@ -37,8 +37,8 @@
         $this->id = $id;
       }
 
-      public function getNome($nome){
-        $this->nome =  $nome;
+      public function setNome($nome){
+        $this->nome = $nome;
       }
 
       public function setDescricao($descricao){

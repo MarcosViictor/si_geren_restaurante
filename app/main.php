@@ -1,5 +1,4 @@
 <?php 
-<<<<<<< HEAD
 require_once 'Comida/Marmita.php';
 require_once 'Comida/Ladygaga.php';
 require_once 'Comida/Luansantana.php';
@@ -16,23 +15,6 @@ require_once 'Pessoa/Funcionario.php';
 require_once 'Pessoa/Cliente.php';    
 require_once 'DB/Conexao.php';
 
-=======
-    //Expotando as classes para a classe main.
-    require_once 'Comida/Marmita.php';
-    require_once 'Comida/Ladygaga.php';
-    require_once 'Comida/Luansantana.php';
-    require_once 'Comida/Robertocarlos.php';
-    require_once 'Comida/Taylorswift.php';
-    require_once 'Comida/Manoelgomes.php';
-    require_once 'Pagamento/Pagamento.php';
-    require_once 'Pagamento/Avista.php';
-    require_once 'Pagamento/Credito.php';
-    require_once 'Pagamento/debito.php';
-    require_once 'Pagamento/Pix.php';
-    require_once 'Pessoa/Pessoa.php';
-    require_once 'Pessoa/Funcionario.php';
-    require_once 'Pessoa/Cliente.php';    
->>>>>>> a7d887d1854c4fd8c422d5e5b9c6d15ece383197
 ?>
 
 <!DOCTYPE html>
@@ -47,36 +29,6 @@ require_once 'DB/Conexao.php';
 
     <h1>Seja Bem vindo ao nosso Restaurante</h1>
     <?php 
-<<<<<<< HEAD
-=======
-     $marmitaManoelGomes = new MarmitaManoelGomes();
-     $marmitaManoelGomes->mostrarCardapio();
-   
-     $marmitaLadyGaga = new MarmitaLadyGaga();
-     $marmitaLadyGaga->mostrarCardapio();
-   
-     $marmitaTaylorSwift = new MarmitaTaylorSwift();
-     $marmitaTaylorSwift->mostrarCardapio();
-   
-     $marmitaLuanSantana = new MarmitaLuanSantana();
-     $marmitaLuanSantana->mostrarCardapio();
-   
-     $marmitaRobertoCarlos = new MarmitaRobertoCarlos();
-     $marmitaRobertoCarlos->mostrarCardapio();
-
-     echo "<br>";
-
-     $joao = new Funcionario("Joao", "989-765-987-20", "caixa");
-
-     echo "<br>";
-     
-     $victor = new Cliente("Victor", "098-654-654-21", "epitacio pessoa 465", 8898876521);
-     $victor ->PedirDelivery();
-    echo "<br>";
-     $victor =new Avista(13.00, "098-654-654-21");
-     $victor-> realizarPagamento(13.00);
-   
->>>>>>> a7d887d1854c4fd8c422d5e5b9c6d15ece383197
     
     $conexao = new Conexao();
 

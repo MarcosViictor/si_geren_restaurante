@@ -19,7 +19,7 @@ class Credito extends Pagamento {
         }
     
         public function getVrcredito(){
-            return $this->getVrcredito;
+            return $this->vr_credito;
         }
     
         //Setters
@@ -33,7 +33,7 @@ class Credito extends Pagamento {
         }
     
         public function setVrcredito($vr_credito){
-            $this->getVrcredito = $vr_credito;
+            $this->vr_credito = $vr_credito;
         }
     
 

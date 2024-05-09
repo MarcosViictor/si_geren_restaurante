@@ -1,16 +1,42 @@
 <?php 
 class Funcionario extends Pessoa{
-    protected $desconto;
     protected $cargo;
 
-    public function __construct($nome, $id,$cargo,$desconto)
+    public function __construct($nome, $id,$cargo)
     {
        $this->nome = $nome;
        $this->id = $id;
        $this->cargo = $cargo;
-       $this->desconto = $desconto;  
+
     }
 
+     //Getters   
+    public function getid(){
+        return $this->id;
+    }
+
+    public function getNome(){
+        return $this->nome;
+    }
+
+    public function getCargo(){
+        return $this->cargo;
+    }
+
+    //Setters
+
+    
+    public function setid($id){
+        $this->id = $id;
+    }
+
+    public function setNome($nome){
+       $this->nome = $nome;
+    }
+
+    public function setCargo($cargo){
+        $this->cargo = $cargo;
+    }
    
 }
 

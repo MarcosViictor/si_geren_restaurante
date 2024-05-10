@@ -1,18 +1,24 @@
 <?php
-require_once 'DB/DataHandler.php';
+require_once('Pessoa.php');
+
 
 class Cliente extends Pessoa {
     protected $nome;
+    protected $email;
+    protected $senha;
     protected $id;
     protected $endereco;
     protected $contato;
 
-    public function __construct($nome, $id, $endereco, $contato) {
+    public function __construct($nome, $email, $senha, $endereco, $contato, $id = null) {
         $this->nome = $nome;
-        $this->id = $id;
+        $this->email = $email;
+        $this->senha = $senha;
         $this->endereco = $endereco;
         $this->contato = $contato;
+        $this->id = $id;
     }
+    
 
     public function getNome() {
         return $this->nome;
@@ -46,6 +52,25 @@ class Cliente extends Pessoa {
     public function setContato($contato) {
         $this->contato = $contato;
     }
+    public function getEmail() {
+        return $this->email;
+    }
+
+    // Setter para o email
+    public function setEmail($email) {
+        $this->email = $email;
+    }
+
+    // Getter para a senha
+    public function getSenha() {
+        return $this->senha;
+    }
+
+    // Setter para a senha
+    public function setSenha($senha) {
+        $this->senha = $senha;
+    }
+
 }
 
 

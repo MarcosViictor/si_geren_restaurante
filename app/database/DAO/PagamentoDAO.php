@@ -1,5 +1,5 @@
 <?php 
-require_once'../conexao.php';
+require_once'../sis_restaurante/si_geren_restaurante/app/conexao.php';
 require_once'../sis_restaurante/si_geren_restaurante/app/Pagamento/Pagamento.php';
 
 class PagamentoDAO{

@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/app/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../app/css/style.css">
+    <title>Criar Conta</title>
 </head>
 <body>
-<form action="">
-        <div class="login">
-            <h1>Criar Conta</h1>
+<form action="cadastrar_usuario.php" method="post">
+    <div class="login">
+        <h1>Criar Conta</h1>
 
-            <input type="text" placeholder="Nome" name="Nome">
-            <input type="email" placeholder="Email" name="Email">
-            <input type="tel" placeholder="Telefone" name="Telefone">
-            <input type="password" placeholder="Senha" name="Senha">
-        
-            <button name="Criar" >Criar</button >
-        </div>
-    </form>
+        <input type="text" placeholder="Nome" name="nome">
+        <input type="email" placeholder="Email" name="email">
+        <input type="tel" placeholder="Telefone" name="telefone">
+        <input type="text" placeholder="Endereço" name="endereco">
+        <input type="password" placeholder="Senha" name="senha">
+        <a class="login-conta" href="login.php">Já tem uma conta faça login!</a>
+        <br>
+        <button type="submit">Criar</button>
+    </div>
+</form>
 </body>
 </html>

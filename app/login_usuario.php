@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 
     if ($clienteDAO->autenticar($email, $senha)) {
        
-        echo 'Login feito!';
+        echo 'Login feito com sucesso!';
         exit(); 
     } else {
        

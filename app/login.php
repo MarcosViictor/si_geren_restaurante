@@ -15,22 +15,15 @@
             <input type="email" placeholder="Email" name="email">
             <input type="password" placeholder="Senha" name="senha">
 
-            <button>Entrar</button>
+            <input class="entrar-button" type="submit" value="enviar" name="submit">
+
         </div>
             
         <div class="adm">
-            <h5>Entrar como administrador</h5>
+            <a href="cadastro.php">Não tem uma conta? cadastre-se.</a>
         </div>
 
-        <div class="imagem">
-
-        <figure class="google">
-            <img src="/img/google-icon.png" alt="">
-        </figure>
-
-        <figure class="face">
-            <img src="/img/facebook-logo-5-1.png" alt="">
-        </figure>   </div>
+        
 
     </div>
         

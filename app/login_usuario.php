@@ -9,12 +9,11 @@ if (isset($_POST['submit'])) {
     // Instancia o ClienteDAO
     $clienteDAO = new ClienteDAO();
 
-    if ($clienteDAO->autenticar($email, $senha)) {
-       
-        echo 'Login feito!';
+    if ($clienteDAO->autenticar($email, $senha)){
+
+        echo "Login feito com sucessos!";
         exit(); 
     } else {
-       
         header('location: login.php');
         
     }

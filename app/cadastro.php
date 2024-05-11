@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../app/css/style.css">
+    <link rel="stylesheet" href="../app/css/login.css">
     <title>Criar Conta</title>
 </head>
 <body>
@@ -16,9 +16,9 @@
         <input type="tel" placeholder="Telefone" name="telefone">
         <input type="text" placeholder="Endereço" name="endereco">
         <input type="password" placeholder="Senha" name="senha">
-        <a class="login-conta" href="login.php">Já tem uma conta faça login!</a>
+        <a href="login.php">Já tem uma conta faça login!</a>
         <br>
-        <button type="submit">Criar</button>
+        <button class="login" type="submit">Criar</button>
     </div>
 </form>
 </body>

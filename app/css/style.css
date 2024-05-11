@@ -53,3 +53,6 @@ form {
     font-weight: bold;
     
 }
+
+/* tela principal do cliente */
+@import "./principal-cliente.css";

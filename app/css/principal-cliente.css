@@ -1,0 +1,86 @@
+* {
+ margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: #9C1515;
+    justify-content: space-between;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 100px;
+    gap: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.user-img {
+    height: 50px;
+}
+
+.user-nav {
+    margin-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.texto-principal {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pratos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.prato-manoelg {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #DFDDD9;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.img-prato-ajuste {
+    border-radius: 10px;
+}
+
+.pratos-ajuste {
+    padding-left: 20px;
+}
+
+h5 {
+    color: #008000;
+}
+
+.comprar-b {
+    border: none;
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+    background-color: #008000;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+

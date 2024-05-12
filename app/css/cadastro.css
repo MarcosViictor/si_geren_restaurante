@@ -20,19 +20,16 @@ form {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    
+   
 }
 
 .login h1{
     font-family: sans-serif;
     font-weight: bold;
     color: #fff;
-    padding: 10px;
-    width: 500px;
-
+    padding: px;
+    
 }
-
-
 
 .login input{
     margin-bottom: 10px;
@@ -41,70 +38,9 @@ form {
     border-radius: 15px;
     width: 300px;
     padding: 12px;
-    font-family: sans-serif;
+    font-family: inter;
     font-weight: bold;
     color: #999;
-}
-
-input.entrar-button {
-    color: #fff;
-    background-color: #CC4E08;
-    padding: 5x 146px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    font-weight: bold;}
-
-.entrar-button :hover{
-    color: #a23b04;
-}
-
-.adm{
-    align-self: flex-start;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #fb762e;
-    cursor: pointer;
-    
-}
-
-.adm :hover{
-color: #CC4E08;
-}
-
-.imagem {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-
-}
-
-.google img{
-    width: 52px;
-    height: auto;
-    display: flex;
-}
-
-.face img{
-
-    width: 52px;
-    height: auto;
-    
-}
-
-.google :hover{
-    background-color: #fff;
-    border-radius: 50px;
-}
-
-.face :hover{
-    background-color: #fff;
-    border-radius: 50px;
-}
-
-a{
-    color: white;
-    font-size: 0.9rem;
 }
 
 .login button{

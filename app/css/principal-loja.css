@@ -1,0 +1,14 @@
+/* tela principal do cliente */
+@import "./principal-cliente.css";
+
+.adicionar-prato {
+    display: flex;
+    flex-direction: column;
+    background-color: #DFDDD9;
+    height: 540px;
+    width: 380px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}

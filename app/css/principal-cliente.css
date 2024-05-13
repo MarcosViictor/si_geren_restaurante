@@ -84,3 +84,42 @@ h5 {
     border-radius: 5px;
 }
 
+.prato-ladyg {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #DFDDD9;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.prato-ts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #DFDDD9;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.prato-luans {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #DFDDD9;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.prato-robertoc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #DFDDD9;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}

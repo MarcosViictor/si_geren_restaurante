@@ -4,5 +4,7 @@
 /* tela cadastro
 @import "./cadastro.css";
 
-/* tela principal do cliente */
-@import "./principal-cliente.css";
+/* tela principal do cliente 
+@import "./principal-cliente.css"; */
+
+@import "./principal-loja.css"

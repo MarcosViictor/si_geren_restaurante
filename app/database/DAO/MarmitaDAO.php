@@ -1,6 +1,6 @@
 <?php 
-require_once'../sis_restaurante/si_geren_restaurante/app/conexao.php';
-require_once'../sis_restaurante/si_geren_restaurante/app/Comida/Marmita.php';
+require_once(__DIR__ . '/../conexao.php');
+require_once(__DIR__ . '/../classes/Marmita.php');
 
 
 class MarmitaDAO{

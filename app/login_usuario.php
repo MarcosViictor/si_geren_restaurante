@@ -6,12 +6,11 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    // Instancia o ClienteDAO
     $clienteDAO = new ClienteDAO();
 
     if ($clienteDAO->autenticar($email, $senha)){
 
-        echo "Login feito com sucessos!";
+        header('location: principal-cliente.html');
         exit(); 
     } else {
         header('location: login.php');

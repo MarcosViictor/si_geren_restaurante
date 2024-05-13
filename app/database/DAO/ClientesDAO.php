@@ -27,15 +27,15 @@ class ClienteDAO {
         }
     }
 
-    public function update(Cliente $cliente) { // Corrigido o nome do método para "update"
-        $sql = 'UPDATE cliente SET nome = ?,email =?, senha = ?, endereco = ?, contato = ? WHERE id = ?'; // Corrigido o comando SQL para "UPDATE"
+    public function update(Cliente $cliente) { 
+        $sql = 'UPDATE cliente SET nome = ?,email =?, senha = ?, endereco = ?, contato = ? WHERE id = ?'; 
         $stmt = Conexao::getConn()->prepare($sql);
         $stmt->bindValue(1, $cliente->getNome());
         $stmt->bindValue(2, $cliente->getEmail());
         $stmt->bindValue(3, $cliente->getSenha());
         $stmt->bindValue(4, $cliente->getEndereco());
         $stmt->bindValue(5, $cliente->getContato());
-        $stmt->bindValue(6, $cliente->getId()); // Adicionado o valor para o parâmetro id
+        $stmt->bindValue(6, $cliente->getId());
         $stmt->execute();
     }
 

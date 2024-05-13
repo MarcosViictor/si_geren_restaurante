@@ -10,7 +10,7 @@ class Conexao{
                 self::$instance->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION); // 
             } catch (\PDOException $e) {
                 echo "Erro ao conectar ao banco de dados: " . $e->getMessage();
-                exit(); // Encerra o script em caso de erro de conexão
+                exit();
             }
         }
         return self::$instance;

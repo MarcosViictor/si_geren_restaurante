@@ -9,9 +9,9 @@
         protected $preco;
         protected $descricao;
       
-     public function __construct($nome, $itens, $preco) {
+     public function __construct($nome, $descricao, $preco) {
           $this->nome = $nome;
-          $this->itens = $itens;
+          $this->descricao = $descricao;
           $this->preco = $preco;
       }
 

@@ -13,9 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $cliente = new Cliente($nome, $email, $senha, $endereco, $telefone);
         $clienteDAO = new ClienteDAO();
         $clienteDAO->create($cliente);
-        echo "Cliente cadastrado com sucesso!";
+       header('location: principal-cliente.html');
     } else {
-        echo "Por favor, preencha todos os campos do formulário.";
+        header('location: cadatrar_usuario.php');
     }
 }
 

@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $cliente = new Cliente($nome, $email, $senha, $endereco, $telefone);
         $clienteDAO = new ClienteDAO();
         $clienteDAO->create($cliente);
-       header('location: principal-cliente.html');
+       header('location: principal-loja.html');
     } else {
         header('location: cadatrar_usuario.php');
     }

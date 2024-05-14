@@ -24,48 +24,58 @@
         <div class="pratos">
 
             <div class="prato-manoelg">
-                <figure><img class="img-prato-ajuste" src="../app/css/imagens/foto-manoelg.svg" alt=""></figure>
+                <figure><img class="img-prato-ajuste" src="/si_geren_restaurante/app/css/imagens/foto-manoelg.svg" alt=""></figure>
                 <h3 class="pratos-ajuste">Prato Manoel Gomes</h3>
                 <h4 class="pratos-ajuste">Arroz, pirão, farofa e galinha.</h4>
-                <figure><img class="pratos-ajuste" src="../app/css/imagens/stars.svg" alt=""></figure>
-                <h5 class="pratos-ajuste">R$ 11,00.</h5>
-                <button class="comprar-b">Comprar</button>
+                <figure><img class="pratos-ajuste" src="/si_geren_restaurante/app/css/imagens/stars.svg" alt=""></figure>
+                <h5 class="pratos-ajuste" name="preco">R$ 11,00</h5>
+                <button class="comprar-b" type="button" onclick="mostrarFormulario(11.00, 'Prato Manoel Gomes')">Comprar</button>
             </div>
-
+        
             <div class="prato-ladyg">
-                <figure><img class="img-prato-ajuste" src="../app/css/imagens/prato-ladyg.svg" alt=""></figure>
+                <figure><img class="img-prato-ajuste" src="/si_geren_restaurante/app/css/imagens/prato-ladyg.svg" alt=""></figure>
                 <h3 class="pratos-ajuste">Prato Lady Gaga</h3>
                 <h4 class="pratos-ajuste">Lasanha e batata palha.</h4>
-                <figure><img class="pratos-ajuste" src="../app/css/imagens/star.svg" alt=""></figure>
-                <h5 class="pratos-ajuste">R$ 12,00.</h5>
-                <button class="comprar-b">Comprar</button>
+                <figure><img class="pratos-ajuste" src="/si_geren_restaurante/app/css/imagens/stars.svg" alt=""></figure>
+                <h5 class="pratos-ajuste" name="preco">R$ 12,00</h5>
+                <button class="comprar-b" type="button" onclick="mostrarFormulario(12.00, 'Prato Lady Gaga')">Comprar</button>
             </div>
-
+        
             <div class="prato-ts">
-                <figure><img class="img-prato-ajuste" src="../app/css/imagens/prato-ts.svg" alt=""></figure>
+                <figure><img class="img-prato-ajuste" src="/si_geren_restaurante/app/css/imagens/prato-ts.svg" alt=""></figure>
                 <h3 class="pratos-ajuste">Prato Taylor Swift</h3>
                 <h4 class="pratos-ajuste">Arroz, feijão, macarrão e bife.</h4>
-                <figure><img class="pratos-ajuste" src="../app/css/imagens/stars.svg" alt=""></figure>
-                <h5 class="pratos-ajuste">R$ 13,00.</h5>
-                <button class="comprar-b">Comprar</button>
+                <figure><img class="pratos-ajuste" src="/si_geren_restaurante/app/css/imagens/stars.svg" alt=""></figure>
+                <h5 class="pratos-ajuste" name="preco">R$ 13,00</h5>
+                <button class="comprar-b" type="button" onclick="mostrarFormulario(13.00, 'Prato Taylor Swift')">Comprar</button>
             </div>
-
+        
             <div class="prato-luans">
-                <figure><img class="img-prato-ajuste" src="../app/css/imagens/prato-luans.svg" alt=""></figure>
+                <figure><img class="img-prato-ajuste" src="/si_geren_restaurante/app/css/imagens/prato-luans.svg" alt=""></figure>
                 <h3 class="pratos-ajuste">Prato Luan Santana</h3>
                 <h4 class="pratos-ajuste">Feijoada, farofa e peixe.</h4>
-                <figure><img class="pratos-ajuste" src="../app/css/imagens/stars.svg" alt=""></figure>
-                <h5 class="pratos-ajuste">R$ 14,00.</h5>
-                <button class="comprar-b">Comprar</button>
+                <figure><img class="pratos-ajuste" src="/si_geren_restaurante/app/css/imagens/stars.svg" alt=""></figure>
+                <h5 class="pratos-ajuste" name="preco">R$ 14,00</h5>
+                <button class="comprar-b" type="button" onclick="mostrarFormulario(14.00, 'Prato Luan Santana')">Comprar</button>
             </div>
-
+        
             <div class="prato-robertoc">
-                <figure><img class="img-prato-ajuste" src="../app/css/imagens/prato-robertoc.svg" alt=""></figure>
+                <figure><img class="img-prato-ajuste" src="/si_geren_restaurante/app/css/imagens/prato-robertoc.svg" alt=""></figure>
                 <h3 class="pratos-ajuste">Prato Roberto Carlos</h3>
                 <h4 class="pratos-ajuste">Macarronada, parmesão e frango.</h4>
-                <figure><img class="pratos-ajuste" src="../app/css/imagens/stars.svg" alt=""></figure>
-                <h5 class="pratos-ajuste">R$ 15,00.</h5>
-                <button class="comprar-b">Comprar</button>
+                <figure><img class="pratos-ajuste" src="/si_geren_restaurante/app/css/imagens/stars.svg" alt=""></figure>
+                <h5 class="pratos-ajuste" name="preco">R$ 15,00</h5>
+                <button class="comprar-b" type="button" onclick="mostrarFormulario(15.00, 'Prato Roberto Carlos')">Comprar</button>
+            </div>
+        
+            <div id="formulario-pagamento" class="formulario-pagamento">
+                <h3 id="nome-prato">Pagamento</h3>
+                <form action="resultado.php" method="post">
+                    <input type="hidden" id="preco" name="preco" value="">
+                    <label for="valor_pago">Valor Pago: </label>
+                    <input type="number" id="valor_pago" name="valor_pago" step="0.01" required>
+                    <button type="submit">Confirmar Pagamento</button>
+                </form>
             </div>
 
         </div>

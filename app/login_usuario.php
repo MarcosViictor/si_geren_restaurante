@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
 
     if ($clienteDAO->autenticar($email, $senha)){
 
-        header('location: principal-cliente.html');
+        header('location: principal-loja.html');
         exit(); 
     } else {
         header('location: login.php');

@@ -16,10 +16,11 @@ require_once '../app/database/classes/Marmita.php';
 <body>
 
     <?php 
-        
+        //Inserindo na tabela marmitas todas as marmitas que estão no front end. 
         $marmita_lady = new Marmita("Lady Gaga", "Lasanha e batata palha", "12,00");
         $marmita_ladyDAO = new MarmitaDAO();
         $marmita_ladyDAO ->create($marmita_lady);  
+        //Inserindo na tabela 
 
         $marmita_ts = new Marmita("Taylor Swift", "Arroz, feijão, macarrão e bife", "13,00");
         $marmita_tsDAO = new MarmitaDAO();

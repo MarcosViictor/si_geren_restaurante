@@ -1,5 +1,7 @@
 <?php
+//Nesse arquivo contém a conexão com o banco mysql, vc coloca o nome da tabela, usuario e senha.
 
+//Por padrão do mysql o user = root, senha = '';
 class Conexao{
     private static $instance;
 

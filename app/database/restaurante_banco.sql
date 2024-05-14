@@ -1,3 +1,5 @@
+-- Aqui contem o Backup do banco de dados.
+
 create table if not exists cliente(
 	id int auto_increment not null,
     nome varchar(30) not null,

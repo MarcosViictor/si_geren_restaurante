@@ -34,10 +34,7 @@ create table if not exists pagamento(
 ALTER TABLE funcionario
 ADD COLUMN senha int AFTER email;
 ALTER TABLE cliente
-MODIFY senha VARCHAR(255);
-
-INSERT INTO cliente (nome, email, senha, endereco, contato) 
-VALUES ('Teste', 'teste@example.com', '123.', 'Endereço de Teste', 123456789);
+MODIFY senha VARCHAR(255); 
 
 
 select * from marmita;

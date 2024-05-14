@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
        header('location: principal-loja.html');
        //Usando a função header para mover para o arquivo da loja.
     } else {
-        header('location: cadatrar_usuario.php');
+        header('location: cadastro.php');
         // Se não tiver nem uma informação ele não deixa passar. 
     }
 }

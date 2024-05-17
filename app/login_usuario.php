@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('../app/database/classes/Cliente.php');
 require_once('../app/database/DAO/ClientesDAO.php');
 //Importando minhas classes. 
@@ -12,7 +13,8 @@ if (isset($_POST['submit'])) {
     //Inicio o obejto DAO para usar sua função autenticar que faz um select na tabela cliente. 
     if ($clienteDAO->autenticar($email, $senha)){
     //Verifica-se se tem um email e senha para poder permitir o acesso.
-        header('location: principal-loja.html');
+        $_SESSION['autenticado'] = true;
+        header('location: principal-loja.php');
         exit(); 
     } else {
         header('location: login.php');

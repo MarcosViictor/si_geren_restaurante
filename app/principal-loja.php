@@ -1,3 +1,15 @@
+<?php 
+session_start();
+
+// Verifica se o usuário não está autenticado, se não estiver, redireciona para a página de login
+if (!isset($_SESSION['autenticado']) || !$_SESSION['autenticado']) {
+    header('Location: trooll.php');
+    exit();
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -86,6 +98,11 @@
                 </form>
             </div>
         </div>
+
+        <div class="user-nav">
+    <figure><img class="user-img" src="../app/css/imagens/user-principal.svg" alt="Usuário"></figure>
+    <a href="logout.php">Sair</a>
+</div>
     </main>
 </body>
 </html>
